@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Add Course </title>
+</head>
+<style>
+
+    span1 {
+        margin-left: 18px
+    }
+
+    span2 {
+        margin-left: 1px
+    }
+
+    span3 {
+        margin-left: 23px
+    }
+</style>
+<script>
+    "use strict";
+    function Add() {
+        name = document.getElementById("ne").value
+        midterm = document.getElementById("me").value
+        final = document.getElementById("fe").value
+        var ar = new Array(name, midterm, final);
+        for (var i = 0; i < ar.length; i++) {
+            array.push(ar[i]);
+        }
+    }
+    function Print() {
+        for (var i = 0; i < array.length / 3; i++) {
+            document.getElementById("mesaj1").innerHTML +=array[i * 3] + "\t" + array[i * 3 + 1] + "\t" + array[i * 3 + 2] + "\t";
+            document.getElementById("mesaj1").innerHTML +="<br />";
+        }
+    }
+    function Avg() {
+        var ort = 0;
+        for (var i = 0; i < array.length / 3; i++) {
+            s1 = parseInt(array[i * 3 + 1]);
+            s2 = parseInt(array[i * 3 + 2]);
+            ort = (s1 + s2) / 2;
+            var arr = new Array(array[i * 3], ort);
+            for (var j = 0; j < arr.length; j++) {
+                avgArray.push(arr[j]);
+            }
+        }        
+
+        for (var i = 0; i < avgArray.length/2; i++) {
+            document.getElementById("mesaj2").innerHTML +=avgArray[i * 2] + "\t" + avgArray[i * 2 + 1] + "\t";
+            document.getElementById("mesaj2").innerHTML +="<br />";
+        }
+    }
+    function Max() {
+        var max = 0;
+        var maxN;
+        for (var i = 0; i < avgArray.length / 2; i++) {
+            if (max < parseInt(avgArray[i * 2 + 1])) {
+                max = parseInt(avgArray[i * 2 + 1]);
+                maxN =avgArray[i * 2];
+            }
+        }
+        var arrr = new Array(maxN, max);
+        for (var i = 0; i < arrr.length; i++) {
+            maxArray.push(arrr[i]);
+        }
+        
+        for (var i = 0; i < maxArray.length; i++) {
+            document.getElementById("mesaj3").innerHTML +=maxArray[i] + "\t";
+            
+        }
+    }
+
+</script>
+<body>
+    <h2 id= title></h2>
+    <p id=outA></p>
+    <p>
+        Name  <span1><input type=text id=ne style="width:99px"> &emsp;<br /><br> </span1>
+        Midterm  <span2><input type=number id=me style="width:99px"> <br /><br></span2>
+        Final  <span3><input type=number id=fe style="width:99px"><br /><br></span3>
+    </p>
+    <p><input type=button value="Add" onClick="Add()"></p>
+    <p><input type=button value="Print" onClick="Print()">
+    <input type=button value="Avg" onClick="Avg()">
+    <input type=button onclick="Max();" value="Max" />
+    </p>
+    <hr />
+    <p>
+        <strong>Name   Midterm   Final </strong>
+        
+        <pre><p id="mesaj1"></p></pre>
+    <hr />
+    <p>
+        <strong>Name   Average</strong>
+        
+        <pre><p id="mesaj2"></p></pre>
+    <hr />
+    <p>
+        <strong>Name   Max</strong>
+        
+        <pre><p id="mesaj3"></p></pre>
+    <h1 />
+    <script>
+        var name, midterm, final, s1, s2;
+        var array = [];
+        var avgArray = new Array();
+        var maxArray = new Array();
+
+        title.innerText = document.title;
+
+    </script>
+</body>
+</html>
