@@ -4,4 +4,6 @@
 
 [Add Course](https://mervetanrikulu.github.io/Odevler/homework.html)
 
+[Inspector](https://mervetanrikulu.github.io/Odevler/inspector.html)
+
 
