@@ -4,4 +4,4 @@
 
 [Add Course]https://mervetanrikulu.github.io/Odevler/homework.html
 
-[Inspector] https://github.com/MerveTanrikulu/Odevler/inspector.html
+
