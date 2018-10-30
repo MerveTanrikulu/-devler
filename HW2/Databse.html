@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -28,11 +28,11 @@
     }
     function aboveGPA() {
         let a = document.getElementById("gpa").value;
-        document.getElementById("mesaj1").innerHTML = db.getAboveGPA(a).size;
+        document.getElementById("mesaj1").innerHTML = db.getAboveGPA(a).length;
     }
     function underGPA() {
         let a = document.getElementById("gpa").value;
-        document.getElementById("mesaj1").innerHTML = db.getUnderGPA(a).size;
+        document.getElementById("mesaj1").innerHTML = db.getUnderGPA(a).length;
     }
     function examSchedule() {
         let a = document.getElementById("num").value
