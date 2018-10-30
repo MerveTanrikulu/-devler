@@ -100,7 +100,7 @@ class Database {
     roomCoursesNumber(examRoom) {
         return this.roomCourse(examRoom).size;
     }
-    getUnderGPA() {
+    getUnderGPA(num) {
         let student = new Set()
         for (let s of this.mapStudent.values())
             if (s.gpa < num) student.add(s);
