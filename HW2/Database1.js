@@ -46,10 +46,10 @@ class Database {
         return this.mapStudent.get(i);
     }
     // Number of students above a given GPA
-    getAboveGPA(num = 0) {
-        let student = new Set()
+    getAboveGPA(num) {
+        let student = []
         for (let s of this.mapStudent.values())
-            if (s.gpa > num) student.add(s);
+            if (s.gpa > num) student.push(s);
         return student
     }
     // Courses taken by a given student
@@ -101,9 +101,9 @@ class Database {
         return this.roomCourse(examRoom).size;
     }
     getUnderGPA(num) {
-        let student = new Set()
+        let student = []
         for (let s of this.mapStudent.values())
-            if (s.gpa < num) student.add(s);
+            if (s.gpa < num) student.push(s);
         return student
     }
 
@@ -167,6 +167,3 @@ function readData() {
     readCourses("Courses.txt");
 }
 readData();
-
-
-
