@@ -8,4 +8,6 @@
 
 [HW2](https://mervetanrikulu.github.io/Odevler/HW2/Databse.html)
 
-[Fetch Remote File](https://mervetanrikulu.github.io/Odevler/CW5/fetchRemoteFile.html)
+[CW5](https://mervetanrikulu.github.io/Odevler/CW5/fetchRemoteFile.html)
+
+[CW6](https://mervetanrikulu.github.io/Odevler/timig.html)
