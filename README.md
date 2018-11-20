@@ -12,5 +12,5 @@
 
 [CW6](https://mervetanrikulu.github.io/Odevler/timig.html)
 
-[HW2](https://mervetanrikulu.github.io/Odevler/HM3/HMW3.html)
+[HW3](https://mervetanrikulu.github.io/Odevler/HM3/HMW3.html)
 
