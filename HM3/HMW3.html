@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="denemeCSS.css">
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class="ground"></div>
+        <div class="hose"></div>
+        <div class="piston">
+            <div id="stick1" class="stick1"></div>
+            <div id="stick2" class="stick2"></div>
+            <div id="boxx" class="box"></div>
+            <div id="stamp-balon" class="stamp-balloon"></div>
+            <div class="stamp-triangle"></div>
+        </div>
+        <div id="bal" class="baloon"></div>
+        <span id="animationSandbox" style="display: block;" class=""><h1 id="text" align="center" class="hmw3"> Homework 3 </h1></span>
+        <img id="img" class="img" alt="image" src="https://66.media.tumblr.com/c706bbfc0d33a6924d29019b563b847d/tumblr_inline_mpdfewD4Eu1qz4rgp.gif">
+    </div>
+    <script>
+        var text = {
+            transform: ["scale3d(.9, .9, .9)", "scale3d(1.1, 1.1, 1.1)","scale3d(.3, .3, .3)"],
+            opacity: ["1", "0"]
+        };
+        window.onload = function () {
+            document.getElementById('text').animate(text, {
+                duration: 2000,
+                iterations: Infinity,
+                direction: "alternate",
+                easing: 'ease-in-out'
+            });
+        }
+        var stick1 = document.getElementById('stick1');
+        var stick2 = document.getElementById('stick2');
+        var balon = document.getElementById('bal');
+        var box = document.getElementById('boxx');
+        var stampBalon = document.getElementById('stamp-balon');
+
+        var baloon = {
+            width: ["3px", "140px", "210px", "280px", "280px"],
+            height: ["3px", "200px", "300px", "400px", "400px"],
+            top: ["158pt", "70pt", "-35pt", "-120pt", "-800pt"],
+            transform: ["rotate(-95deg)", "rotate(-95deg)", "rotate(-140deg)", "rotate(-150deg)", "rotate(-200deg)"],
+            lef: ["", "595px", "565px", "520px", "570px"],
+            //opacity: ["1", "1","-1"]
+        };
+        var stick = {
+            top: ['0px', '100px', '0px', '100px', '0px']
+        };
+        var img = {
+            width: ["3px", "140px", "280px", "350px", "450px"],
+            height: ["3px", "140px", "280px", "350px", "450px"],
+            top: ["-35pt","-110pt","-200pt"],
+            transform: ["scale3d(1.1, 1.1, 1.1)", "scale3d(.3, .3, .3)", "scale3d(.9, .9, .9)"],
+            //right: ["600px", "605px"],
+            opacity: ['-1', '-1', '1','1'],
+        };
+        var trytheImage = document.getElementById('img').animate(img, {
+            duration: 5500,
+            delay: 2200,
+            easing: 'ease-in-out',
+            fill: 'both'
+        });        
+        trytheImage.pause();
+
+        function growImage() {
+            trytheImage.playbackRate = 1;
+            trytheImage.play();
+        }
+
+        function trytheStick() {
+            stick1.animate(stick, {
+                id: 'stick1',
+                delay: 1000,
+                duration: 3000,
+                iterations: 1
+            })
+            stick2.animate(stick, {
+                id: 'stick2',
+                delay: 1000,
+                duration: 3000,
+                iterations: 1
+            })
+        } 
+        var balonChange = balon.animate(baloon, {
+            duration: 5000,
+            delay: 1000,
+            easing: 'ease-in-out',
+            fill: 'both'
+        });
+        balonChange.pause();
+
+        function growBalon() {
+            balonChange.playbackRate = 1;
+            balonChange.play();
+        }
+        stampBalon.addEventListener("mousedown", growBalon, false);
+        stampBalon.addEventListener("touchstart", growBalon, false);
+        stampBalon.addEventListener("mousedown", trytheStick, false);
+        stampBalon.addEventListener("touchstart", trytheStick, false);
+        stampBalon.addEventListener("mousedown", growImage, false);
+        stampBalon.addEventListener("touchstart", growImage, false);
+    </script>
+</body>
+</html>
