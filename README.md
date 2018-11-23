@@ -14,3 +14,5 @@
 
 [HW3](https://mervetanrikulu.github.io/Odevler/HM3/HMW3.html)
 
+[CW7](https://mervetanrikulu.github.io/Odevler/CW7/CW.7.html)
+
