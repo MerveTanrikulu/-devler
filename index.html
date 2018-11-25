@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="manifest.json">
+    <title>Merve TANRIKULU</title>
+
+</head>
+<style>
+    body {
+        background: #000000;
+    }
+
+    html {
+        height: window.innerHeight;
+        width: window.innerWidth;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    p {
+        text-indent: 55px;
+        color: #b66767;
+        height:7px;
+        font-size: 20px;
+        text-align: left;
+        letter-spacing: 3px;
+    }
+    ul {
+        background: #000000;
+        padding: 20px;
+        list-style-type: square;
+    }
+
+        ul li {
+            background: #596D82;
+            padding: 5px;
+            margin-left: 35px;
+        }
+
+</style>
+<script>
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('sw.js')
+                .then((reg) => { console.log('SW Registered', reg) })
+                .catch(console.log)
+        }
+</script>
+
+<body>
+    <h1><font color="#b66767">Merve Tanrıkulu Projects</font></h1>
+    <p>
+        Class Work
+    </p>
+
+    <ul>
+        <li><a href="../Arraycw2.html">Class Work 1</a></li>
+        <br>
+        <li><a href="../inspector.html">Class Work 2</a></li>
+        <br>
+        <li><a href="../c4_data.html">Class Work 3</a></li>
+        <br>
+        <li><a href="../index.html">Class Work 4</a></li>
+        <br>
+        <li><a href="../CW5/fetchRemoteFile.html">Class Work 5</a></li>
+        <br>
+        <li><a href="../timig.html">Class Work 6</a></li>
+        <br>
+        <li><a href="../CW7/CW.7.html">Class Work 7</a></li>
+    </ul>
+
+    <p>
+        Home Work
+    </p>
+    <ul>
+        <li><a href="../homework.html">Home Work 1</a></li>
+        <br>
+        <li><a href="../HW2/Databse.html">Home Work 2</a></li>
+        <br>
+        <li><a href="../HM3/HMW3.html">Home Work 3</a></li>
+    </ul>
+
+    <a href="https://mervetanrikulu.github.io/Odevler/"><font color="#b66767">My GitHub Repo</font></a>
+
+
+
+
+</body>
+
+
+</html>
