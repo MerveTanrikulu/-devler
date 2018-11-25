@@ -6,7 +6,7 @@ Class Works
 
 [CW3](https://mervetanrikulu.github.io/Odevler/c4_data.html)
 
-[CW4](https://mervetanrikulu.github.io/Odevler/index.html)
+[CW4](https://mervetanrikulu.github.io/Odevler/CW4/index.html)
 
 [CW5](https://mervetanrikulu.github.io/Odevler/CW5/fetchRemoteFile.html)
 
