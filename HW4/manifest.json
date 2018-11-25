@@ -1,7 +1,8 @@
 {
-  "name": "Merve Tanrikulu "
-   "start_url": "/Odevler/HW4/index.html",
-  "display": "standalone",
+  "name": "Merve TANRIKULU",
+  "start_url": "/Odevler/HW4/index.html",
+ "display": "fullscreen",
+"orientation": "portrait",
   "background_color": "cyan",
   "icons": [
     {
