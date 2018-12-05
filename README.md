@@ -14,6 +14,8 @@ Class Works
 
 [CW7](https://mervetanrikulu.github.io/Odevler/CW7/CW.7.html)
 
+[CW9](https://mervetanrikulu.github.io/Odevler/CW9.html)
+
 Homeworks
 
 [HW1](https://mervetanrikulu.github.io/Odevler/homework.html)
@@ -23,3 +25,5 @@ Homeworks
 [HW3](https://mervetanrikulu.github.io/Odevler/HM3/HMW3.html)
 
 [HW4](https://mervetanrikulu.github.io/Odevler/HW4/index.html)
+
+
