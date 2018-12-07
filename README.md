@@ -1,8 +1,6 @@
 Class Works
 
-[CW1](https://mervetanrikulu.github.io/Odevler/Arraycw2.html)
-
-[CW2](https://mervetanrikulu.github.io/Odevler/inspector.html)
+[CW2](https://mervetanrikulu.github.io/Odevler/Arraycw2.html)
 
 [CW3](https://mervetanrikulu.github.io/Odevler/c4_data.html)
 
