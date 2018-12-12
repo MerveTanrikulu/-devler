@@ -1,4 +1,4 @@
-﻿</body>
+</body>
 </html>
 <!DOCTYPE html>
 
@@ -307,6 +307,7 @@
                 harryPotterPhrases: ["Triwizard Cup", "Pensieve", "Goblet of Fire", "Golden Snitch", "Fluffy", "Howler", "Resurrection Stone", "Mirror of Erised", "Sword of Gryffindor", "Invisibility Cloak", "Deluminator", "Time Turner",
                     "Golden Egg", "Chessboard Chamber", "Monster Book of Monsters", "Nagini", "Spectrespecs", "Knight Bus", "Magical Bag", "Azkaban", "Felix Felicis", "Hufflepuff", "Gryffindor", "Slytherin",
                     "Sirius Black", "Remus Lupin", "Nicolas Flamel", "Weasley's Clock", "Moving Stairs", "Wand", "Neville", "Hogwarts Ekspress"],
+                displayPhrase: [],
                 numWrongGuesses: 0,//yanlis tahminlerin sayisi/empty input returns made (1-5 yanlis tahminl / 7 cuts ahead to round complete)
                 numBodyPartsShown: 0,//adamin vucut parcalarinin sayisi
                 initialize: function () {//setup initial phrase and displayPhrase
@@ -315,13 +316,25 @@
                 showAvailableLetters: function () {
                     var alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
                     for (var i = 0; i < alphabet.length; i++) {//alfabenin uzunluğunca döndü
-                        var div = document.createElement("div");//div yarattık
+                        var div = document.createElement("div");//div yarat
                         div.setAttribute("class", "availableLetter");//divin class adı "letter"
                         div.setAttribute("id", "al" + (alphabet[i]));//unique id ekledik "al0","al1" gibi.
-                        div.setAttribute("onclick", "Hangman.onClick(event)");//Herbir div için onclick olduğunda event'i gönderiyor.
+                        div.setAttribute("onclick", "Hangman.onClick(event)");//Herbir div için onclick olduğunda event'i gönder
                         div.innerHTML = alphabet[i];//divlerin içindeki dataları alfabeye göre veriyor
-                        document.getElementById("availableLetters").appendChild(div);//div'i to ana container'a ekliyoruz     
+                        document.getElementById("availableLetters").appendChild(div);//div'i to ana container'a ekle     
                     }
+                },
+                removeDivs: function (className) {//butun divleri class'tan sil
+                    var letters = document.getElementsByClassName(className);//classtaki butun divleri letters'a at
+                    while (letters[0]) {//lettersta dön
+                        letters[0].parentNode.removeChild(letters[0]);//herbir divi sil
+                    }
+                },
+                updateDisplayPhrase: function () {
+                    this.letterMatchCheck();
+                    this.removeDivs("letter");
+                    this.showDisplayPhrase();
+                    this.phraseMatchCheck();
                 },
                 resetSVGs: function () {//yeni tur için SVGs'i resetliyoruz (initial state)
                     if (this.userScore === 0) {
@@ -383,6 +396,7 @@
                 },
                 resetGame: function () {//her seyi resetliyoruz
                     this.resetSVGs();
+                    this.removeDivs("availableLetter");
                     this.numWrongGuesses = 0;
                     this.numBodyPartsShown = 0;
                     this.initialize();
