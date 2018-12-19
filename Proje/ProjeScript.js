@@ -723,7 +723,7 @@ var Hangman = {
                 //}
                 //calis.addEventListener("mousedown", getpathTwo, false);
                 //calis.addEventListener("touchstart", getpathTwo, false);
-                imghangma.src = "..\Proje\hangman_3.gif";
+                imghangma.src = "\Proje\hangman_3.gif";
                 break;
             case 3://3rd failed turn
                 //var pathThree = {
@@ -761,7 +761,7 @@ var Hangman = {
                 //}
                 //calis.addEventListener("mousedown", getpathFour, false);
                 //calis.addEventListener("touchstart", getpathFour, false);
-                imghangma.src = "\\Proje\hangman_5.gif";
+                imghangma.src = "\Proje\hangman_5.gif";
                 break;
             case 5://5th failed turn - Game Over screen
                 //var pathFive = {
@@ -779,7 +779,7 @@ var Hangman = {
                 //    pathFiveChange.play();
                 //}
                 //calis.addEventListener("mousedown", getpathFive, false);
-                imghangma.src = "\\Proje\hangman_6.gif";
+                imghangma.src = "\Proje\hangman_6.gif";
                 //calis.addEventListener("touchstart", getpathFive, false);
                 //this.userScore = 0;
                 document.getElementById("score").innerHTML = "Score : " + this.userScore;//update score
@@ -930,7 +930,7 @@ var Hangman = {
         //    calis.addEventListener("mousedown", getpathFive, false);
         //    calis.addEventListener("touchstart", getpathFive, false);
         //}
-        imghangma.src = "\\Proje\hangman_0.jpg";
+        imghangma.src = "\Proje\hangman_0.jpg";
     },
     resetGame: function () {//reset everything
         this.cancelAnimateLetters();
