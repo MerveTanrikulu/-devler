@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="ProjeCSS.css">
+    <script src="ProjeScript.js"></script>
+    <title></title>
+</head>
+<body onload="Hangman.initialize()">
+    <h1 class="h1">Hang Man</h1>
+    <p id="score" class="elements">Score : 0</p>
+    <img id="img" class="img" alt="image" src="..\paper.jpg">
+    <img id="img2" class="img2" alt="image" src="..\sword.png">
+    <img id="img4" class="img4" alt="image" src="..\Buckbeak.png">
+    <img id="img3" class="img3" alt="image" src="..\black.png">
+    <img id="img6" class="img6" alt="image" src="..\GoldenEgg.jpg">
+    <img id="img7" class="img7" alt="image" src="..\mektup.jpg">
+    <img id="img8" class="img8" alt="image" src="..\socks.jpg">
+    <img id="img9" class="img9" alt="image" src="..\diadem.jpg">
+    <img id="img10" class="img10" alt="image" src="..\felsefetasi.jpg">
+    <img id="img11" class="img11" alt="image" src="..\moon.jpg">
+    <img id="img13" class="img13" alt="image" src="..\supurge.jpg">
+    <img id="img12" class="img12" alt="image" src="..\Bailiks.png">
+    <img id="img5" class="img5" alt="image" src="..\ChessBoard.gif">
+    <img id="img14" class="img14" alt="image" src="..\remembrall.gif">
+    <img id="img16" class="img16" alt="image" src="..\Pensieve.jpg">
+    <img id="img15" class="img15" alt="image" src="..\Tranportdator.gif">
+    <img id="img17" class="img17" alt="image" src="..\snitch.png">
+    <img id="img18" class="img18" alt="image" src="..\93.jpg">
+
+    <p id="text" class="text">I show not your face but your hearts desire</p>
+    <p id="text2" class="text2">Prison</p>
+    <p id="text3" class="text3">Protector of the Philosopher's Stone</p>
+    <p id="text4" class="text4">Deathly Hallows</p>
+    <p id="text5" class="text5">Magic</p>
+    <p id="text6" class="text6">Special furniture for Weasley's</p>
+    <p id="text7" class="text7">Lucy</p>
+
+
+    <div id="container">
+
+        <img id="imghangma" alt="image" src="..\hangman_0.jpg">
+
+    </div>
+
+
+    <div id="ui">
+        <div id="letters" class="elements"></div>
+        <div id="availableLetters"></div>
+        <input id="input" class="elements" onkeyup="Hangman.onEnter(event)" type="text" placeholder="Enter the Phrase" />
+        <div id="clue" type="button" class="elements" onclick="Hangman.PharesesClue()">Clue</div>
+        <div id="button" class="elements" type="button" onclick="Hangman.onSubmit('input')">Submit Guess</div>
+        <div id="pink" class="pink"></div>
+    </div>
+</body>
+</html>
