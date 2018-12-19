@@ -695,7 +695,7 @@ var Hangman = {
                 //    easing: 'ease-in-out',
                 //    fill: 'both'
                 //});
-                imghangma.src = "\\Proje\hangman_2.gif";
+                imghangma.src = "\Proje\hangman_2.gif";
                 //pathOneChange1.pause();
                 //function getpathOne() {
                 //    pathOneChange.playbackRate = 1;
@@ -723,7 +723,7 @@ var Hangman = {
                 //}
                 //calis.addEventListener("mousedown", getpathTwo, false);
                 //calis.addEventListener("touchstart", getpathTwo, false);
-                imghangma.src = "\\Proje\hangman_3.gif";
+                imghangma.src = "..\Proje\hangman_3.gif";
                 break;
             case 3://3rd failed turn
                 //var pathThree = {
@@ -742,7 +742,7 @@ var Hangman = {
                 //}
                 //calis.addEventListener("mousedown", getpathThree, false);
                 //calis.addEventListener("touchstart", getpathThree, false);
-                imghangma.src = "\\Proje\hangman_4.gif";
+                imghangma.src = "\Proje\hangman_4.gif";
                 break;
             case 4://4th failed turn
                 //var pathFour = {
