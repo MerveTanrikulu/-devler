@@ -695,7 +695,7 @@ var Hangman = {
                 //    easing: 'ease-in-out',
                 //    fill: 'both'
                 //});
-                imghangma.src = "..\Proje\hangman_2.gif";
+                imghangma.src = "../Proje/hangman_2.gif";
                 //pathOneChange1.pause();
                 //function getpathOne() {
                 //    pathOneChange.playbackRate = 1;
@@ -742,7 +742,7 @@ var Hangman = {
                 //}
                 //calis.addEventListener("mousedown", getpathThree, false);
                 //calis.addEventListener("touchstart", getpathThree, false);
-                imghangma.src = "..\Proje\hangman_4.gif";
+                imghangma.src = "../Proje/hangman_4.gif";
                 break;
             case 4://4th failed turn
                 //var pathFour = {
@@ -779,7 +779,7 @@ var Hangman = {
                 //    pathFiveChange.play();
                 //}
                 //calis.addEventListener("mousedown", getpathFive, false);
-                imghangma.src = "\Proje\hangman_6.gif";
+                imghangma.src = "/Proje/hangman_6.gif";
                 //calis.addEventListener("touchstart", getpathFive, false);
                 //this.userScore = 0;
                 document.getElementById("score").innerHTML = "Score : " + this.userScore;//update score
