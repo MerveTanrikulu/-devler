@@ -407,11 +407,4 @@
     }
 }
 
-@media screen and (max-width:600px) {
-  #container {
-    margin-left: 0px;
-  }
-  .availableLetter:hover {
-    color: white;
-  }
-}
+
