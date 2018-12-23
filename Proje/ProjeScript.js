@@ -955,19 +955,19 @@ var Hangman = {
         this.numWrongGuesses++;//log the guess as wrong
         switch (this.numWrongGuesses) {
             case 1://1st failed turn
-                imghangma.src = "\\hangman_2.gif";
+                imghangma.src = "\Proje\hangman_2.gif";
                 break;
             case 2://2nd failed turn
-                imghangma.src = "\\hangman_3.gif";
+                imghangma.src = "\Proje\hangman_3.gif";
                 break;
             case 3://3rd failed turn
-                imghangma.src = "\\hangman_4.gif";
+                imghangma.src = "\Proje\hangman_4.gif";
                 break;
             case 4://4th failed turn
-                imghangma.src = "\\hangman_5.gif";
+                imghangma.src = "\Proje\hangman_5.gif";
                 break;
             case 5://5th failed turn - Game Over screen
-                imghangma.src = "\\hangman_6.gif";
+                imghangma.src = "\Proje\hangman_6.gif";
                 this.userScore = 0;
                 document.getElementById("score").innerHTML = "Score : " + this.userScore;//update score
                 document.getElementById("button").innerHTML = "Play again?";
@@ -989,7 +989,7 @@ var Hangman = {
         }
     },
     removeGamePieces: function () {//animated removal of body parts
-        imghangma.src = "\\hangman_0.jpg";
+        imghangma.src = "\Proje\hangman_0.jpg";
     },
     resetGame: function () {//reset everything
         this.cancelAnimateLetters();
