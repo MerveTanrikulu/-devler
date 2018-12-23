@@ -1,0 +1,409 @@
+﻿html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+}
+.h1 {
+    font-family: 'Blackadder ITC', serif;
+    font-size: 1.5em;
+    animation: fadeIn forwards;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(255,187,164), 0 0 5px rgb(247,134,130);
+    opacity: 0;
+}
+.text9 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+.text8 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.text10 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+.text11 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+.img {
+    position: absolute;
+    left: 57px;
+    width: 170px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.img2 {
+    position: absolute;
+    left: 75px;
+    width: 170px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.img3 {
+    position: absolute;
+    left: 57px;
+    width: 170px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.img4 {
+    position: absolute;
+    left: 57px;
+    width: 170px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.img5 {
+    position: absolute;
+    left: 57px;
+    width: 170px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.img6 {
+    position: absolute;
+    left: 57px;
+    bottom: 20px;
+    width: 150px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.img7 {
+    position: absolute;
+    left: 57px;
+    width: 170px;
+    top:0px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.img8 {
+    position: absolute;
+    left: 57px;
+    width: 170px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.img9 {
+    position: absolute;
+    left: 57px;
+    width: 170px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.img10 {
+    position: absolute;
+    left: 57px;
+    width: 170px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.img11 {
+    position: absolute;
+    left: 57px;
+    width: 170px;
+    top:0px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.img12 {
+    position: absolute;
+    left: 57px;
+    width: 170px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.img13 {
+    position: absolute;
+    left: 57px;
+    width: 170px;
+    bottom:20px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.img14 {
+    position: absolute;
+    left: 57px;
+    width: 170px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.img15 {
+    position: absolute;
+    left: 57px;
+    width: 170px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.img16 {
+    position: absolute;
+    left: 57px;
+    bottom: 20px;
+    width: 150px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.img17 {
+    position: absolute;
+    left: 57px;
+    width: 170px;
+    bottom:100px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.img18 {
+    position: absolute;
+    left: 57px;
+    width: 170px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+.img19 {
+    position: absolute;
+    left: 57px;
+    width: 170px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+.img20 {
+    position: absolute;
+    left: 57px;
+    width: 170px;
+    bottom:20px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.text {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.text2 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.text3 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.text4 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.text5 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.text6 {
+    position: absolute;
+    left: 57px;
+    width: 75px;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+.text7 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+
+#score {
+    text-align: center;
+    color: white;
+    font-family: 'Blackadder ITC', serif;
+    text-shadow: 1px 1px 2px black, 0 0 15px rgb(255,187,164), 0 0 3px rgb(247,134,130);
+}
+
+#container {
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+    width: 200px;
+}
+
+.elements {
+    animation: fadeIn forwards;
+    opacity: 0;
+}
+
+#ui {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+#letters {
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    height: 25px;
+    perspective: 450px;
+    color: white;
+    font-family: 'Blackadder ITC', serif;
+    font-size: 20px;
+}
+
+.letter {
+    z-index: 10;
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-bottom: 2px solid #b66767;
+    margin: 2px;
+}
+
+#availableLetters {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(255,187,164), 0 0 5px rgb(247,134,130);
+    margin: 20px auto;
+    animation: fadeIn forwards;
+    opacity: 0;
+    font-family: 'Blackadder ITC', serif;
+    font-size:15px;
+}
+
+.availableLetter {
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    height: 20px;
+    width: 25px;
+    margin: 5px;
+    border: 2px solid white;
+    cursor: pointer;
+    background: rgb(118,98,99);
+    font-weight: bold;
+}
+
+    .availableLetter:hover {
+        color: rgb(118,98,99);
+        background-color: rgb(255,220,198);
+    }
+
+#input, #button, #clue {
+    font-size: 16px;
+    font-weight: bold;
+    display: inline;
+    text-align: center;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 7px 40px;
+    border-radius: 6px;
+    color: rgb(118,98,99);
+    font-family: 'Blackadder ITC', serif;
+}
+
+#button, #clue {
+    cursor: pointer;
+    font-weight: normal;
+    color: white;
+    padding: 7px 10px;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes pop {
+    0% {
+        border-bottom: 2px solid black;
+        box-shadow: 0px 2px 0px 0px rgb(247,134,130);
+        color: white;
+    }
+
+    100% {
+        border-bottom: 2px solid black;
+        box-shadow: 0px 2px 0px 0px white;
+        color: white;
+    }
+}
+
