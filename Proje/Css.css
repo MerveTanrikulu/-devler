@@ -270,7 +270,9 @@
 .text6 {
     position: absolute;
     left: 57px;
-    width: 75px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
     visibility: hidden;
     animation: img 5s infinite;
 }
