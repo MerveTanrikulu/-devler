@@ -491,8 +491,8 @@ var Hangman = {
         }
         else if (this.phrase == "Weasleys Clock") {
             var text6 = {
-                width: ["100px", "100px", "100px", "100px", "100px"],
-                visibility: ["visible", "visible", "visible", "hidden", "hidden"],
+                width: ["150px", "150px", "150px", "150px", "150px"],
+                visibility: ["visible", "visible", "visible", "visible", "hidden"],
                 opacity: ["1", "1", "1", "1", "0"],
             };
             var textChange6 = document.getElementById("text6").animate(text6, {
