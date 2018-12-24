@@ -120,32 +120,6 @@ var Hangman = {
             calis.removeEventListener("touchstart", playImg19, false);
             calis.removeEventListener("mousedown", playImg19, false);
         }
-        else if (this.phrase == "Helga Hufflepuff") {
-            var img8 = {
-                width: ["100px", "120px", "150px", "150px", "150px"],
-                lef: ["", "595px", "500px", "420px", "370px"],
-                opacity: ["1", "1", "1", "1", "0"],
-                visibility: ["visible", "visible", "visible", "visible", "visible"],
-            };
-            var imgChange19 = document.getElementById("img8").animate(img8, {
-                duration: 5000,
-                delay: 1000,
-                iteration: 1,
-                easing: 'ease-in-out',
-                fill: 'both'
-            });
-
-            function playImg8() {
-                imgChange8.playbackRate = 1;
-                imgChange8.play();
-            }
-            var calis = document.getElementById("clue");
-
-            calis.addEventListener("mousedown", playImg8, false);
-            calis.addEventListener("touchstart", playImg8, false);
-            calis.removeEventListener("touchstart", playImg8, false);
-            calis.removeEventListener("mousedown", playImg8, false);
-        }
         else if (this.phrase == "Marauders Map") {
             var img20 = {
                 width: ["100px", "100px", "100px", "100px", "100px"],
@@ -260,35 +234,7 @@ var Hangman = {
             calis.removeEventListener("mousedown", playImg6, false);
             //setTimeout(function () { document.getElementById("img13").src = ""; }, 5000);
         }
-        else if (this.phrase == "Marauders Map") {
-            var img6 = {
-                width: ["55px", "75px", "100px", "100px", "100px"],
-                //margin-top: ["-100px", "100px", "200px", "300px", "400px", "500px", "-100px"],
-                //margin-left: ["", "595px", "565px", "520px", "570px"],
-                transform: ["translateY(60vw)", "translateX(30vw)", "translateX(70vw)", "translateY(-50vw)"],
-                visibility: ["visible", "visible", "visible", "visible", "visible"],
-                opacity: ["1", "1", "1", "1", "1", "0"],
-            };
-            var imgChange6 = document.getElementById("img6").animate(img6, {
-                duration: 9000,
-                delay: 1000,
-                iteration: 1,
-                easing: 'ease-in-out',
-                fill: 'both'
-            });
 
-            function playImg6() {
-                imgChange6.playbackRate = 1;
-                imgChange6.play();
-            }
-            var calis = document.getElementById("clue");
-
-            calis.addEventListener("mousedown", playImg6, false);
-            calis.addEventListener("touchstart", playImg6, false);
-            calis.removeEventListener("touchstart", playImg6, false);
-            calis.removeEventListener("mousedown", playImg6, false);
-            //setTimeout(function () { document.getElementById("img13").src = ""; }, 5000);
-        }
         else if (this.phrase == "Dementor") {
             var img16 = {
                 width: ["120px", "120px", "120px", "120px", "120px"],
@@ -396,7 +342,7 @@ var Hangman = {
         }
         else if (this.phrase == "Fluffy") {
             var text3 = {
-                width: ["100px", "100px", "100px", "100px", "100px"],
+                width: ["150px", "150px", "150px", "150px", "150px"],
                 visibility: ["visible", "visible", "visible", "hidden", "hidden"],
                 opacity: ["1", "1", "1", "1", "0"],
             };
@@ -420,7 +366,7 @@ var Hangman = {
         }
         else if (this.phrase == "Felix Felicis") {
             var text7 = {
-                width: ["100px", "100px", "100px", "100px", "100px"],
+                width: ["180px", "180px", "180px", "180px", "180px"],
                 visibility: ["visible", "visible", "visible", "hidden", "hidden"],
                 opacity: ["1", "1", "1", "1", "0"],
             };
@@ -589,7 +535,7 @@ var Hangman = {
         }
         else if (this.phrase == "Dobby") {
             var text9 = {
-                width: ["200px", "200px", "200px", "180px", "170px"],
+                width: ["180px", "180px", "180px", "180px", "170px"],
                 opacity: ["1", "1", "1", "1", "0"],
                 visibility: ["visible", "visible", "visible", "hidden", "hidden"],
             };
@@ -709,7 +655,7 @@ var Hangman = {
         }
         else if (this.phrase == "Mirror of Erised") {
             var text = {
-                width: ["100px", "100px", "100px", "100px", "100px"],
+                width: ["150px", "150px", "150px", "150px", "150px"],
                 opacity: ["1", "1", "1", "1", "0"],
                 visibility: ["visible", "visible", "visible", "hidden", "hidden"],
             };
