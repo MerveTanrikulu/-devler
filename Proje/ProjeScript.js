@@ -350,7 +350,7 @@ var Hangman = {
             var img2 = {
                 width: ["180px", "180px", "180px", "180px", "180px"],
                 visibility: ["visible", "visible", "visible", "hidden", "hidden"],
-                opacity: ["0.3", "0.3", "0.3", "0.3", "0"],
+                opacity: ["1", "1", "1", "1", "0"],
             };
             var imgChange2 = document.getElementById('img2').animate(img2, {
                 duration: 5000,
