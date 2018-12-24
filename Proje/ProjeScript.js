@@ -294,7 +294,7 @@ var Hangman = {
         }
         else if (this.phrase == "Leaky Cauldron") {
             var img2 = {
-                width: ["180px", "180px", "180px", "180px", "180px"],
+                width: ["150px", "150px", "150px", "150px", "150px"],
                 visibility: ["visible", "visible", "visible", "hidden", "hidden"],
                 opacity: ["1", "1", "1", "1", "0"],
             };
