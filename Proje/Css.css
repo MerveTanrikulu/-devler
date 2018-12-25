@@ -1,4 +1,4 @@
-﻿html, body {
+html, body {
     padding: 0;
     margin: 0;
     height: 100%;
@@ -44,6 +44,105 @@
     animation: img 5s infinite;
 }
 .text11 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+.text12 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+.text13 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+.text14 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+.text15 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+.text16 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+.text17 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+.text18 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+.text19 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+.text20 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+.text21 {
+    position: absolute;
+    left: 57px;
+    width: 180px;
+    color: rgb(140,120,121);
+    font-family: 'Blackadder ITC', serif;
+    visibility: hidden;
+    animation: img 5s infinite;
+}
+.text22 {
     position: absolute;
     left: 57px;
     width: 180px;
@@ -270,9 +369,7 @@
 .text6 {
     position: absolute;
     left: 57px;
-    width: 180px;
-    color: rgb(140,120,121);
-    font-family: 'Blackadder ITC', serif;
+    width: 75px;
     visibility: hidden;
     animation: img 5s infinite;
 }
@@ -409,11 +506,3 @@
     }
 }
 
-@media screen and (max-width:600px) {
-  #container {
-    margin-left: 0px;
-  }
-  .availableLetter:hover {
-    color: white;
-  }
-}
