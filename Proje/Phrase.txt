@@ -1,6 +1,5 @@
 Quidditch*1
 Fluffy*2
-Hedwig*3
 Mirror of Erised*4
 Leaky Cauldron*5
 Invisibility Cloak*6
@@ -26,6 +25,5 @@ Wand*25
 Neville Longbottom*26
 Umbrige*27
 Buckbeak*28
-Hogwarts Express*29
 Rowena Ravenclaw*30
 Patronus*31
