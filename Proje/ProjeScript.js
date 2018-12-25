@@ -1,4 +1,4 @@
-// JavaScript source code
+ // JavaScript source code
 var harryPotterPhrases1 = []
 function readData() {
     fetch("https://MerveTanrikulu.github.io/Odevler/Proje/Phrase.txt")
@@ -17,11 +17,10 @@ function dataSplit(text) {
 readData();
 
 var Hangman = {
-    //harryPotterPhrases: ["Quidditch", "Fluffy", "Hedwig", "Mirror of Erised", "Leaky Cauldron", "Invisibility Cloak", "Godric Gryffindor","Albus Dumbledore","Severus Snape","Ollivander",
-    //    "Chessboard Chamber", "Azkaban", "Felix Felicis", "Helga Hufflepuff", "Salazar Slytherin", "Sirius Black", "Remus Lupin","Marauders Map", "Patronus", "Dementor","Dobby", "Catchers",
-    //    "Nicolas Flamel", "Weasleys Clock", "Wand", "Neville Longbottom", "Umbrige", "Buckbeak", "Hogwarts Express","Rowena Ravenclaw","Patronus"],
+    harryPotterPhrases: ["Quidditch", "Fluffy", "Hedwig", "Mirror of Erised", "Leaky Cauldron", "Invisibility Cloak", "Godric Gryffindor","Albus Dumbledore","Severus Snape","Ollivander",
+        "Chessboard Chamber", "Azkaban", "Felix Felicis", "Helga Hufflepuff", "Salazar Slytherin", "Sirius Black", "Remus Lupin","Marauders Map", "Patronus", "Dementor","Dobby", "Catchers",
+        "Nicolas Flamel", "Weasleys Clock", "Wand", "Neville Longbottom", "Umbrige", "Buckbeak", "Hogwarts Express","Rowena Ravenclaw","Patronus"],
 
-    harryPotterPhrases: [],
     phrase: [],
     displayPhrase: [],
     control:[],
@@ -29,13 +28,6 @@ var Hangman = {
     userScore: 0,
     numWrongGuesses: 0,
     numBodyPartsShown: 0,
-
-    PlayAuto: function () {
-        document.getElementById("myAudio").play();
-    },
-    PauseAuto: function () {
-        document.getElementById("myAudio").pause();
-    },
     initialize: function () {
         this.harryPotterPhrases = harryPotterPhrases1.copyWithin(0, 0, harryPotterPhrases1.length);
         this.randomDisplayPhrase();
@@ -70,12 +62,11 @@ var Hangman = {
         }
         else if (this.phrase == "Helga Hufflepuff") {
             var img8 = {
-                width: ["100px", "100px", "100px", "100px", "100px"],
-                lef: ["", "595px", "500px", "420px", "370px"],
+                width: ["180px", "180px", "180px", "180px", "180px"],
                 opacity: ["1", "1", "1", "1", "0"],
-                visibility: ["visible", "visible", "visible", "visible", "visible"],
+                visibility: ["visible", "visible", "visible", "hidden", "hidden"],
             };
-            var imgChange8 = document.getElementById("img8").animate(img8, {
+            var imgChange8 = document.getElementById("text19").animate(img8, {
                 duration: 5000,
                 delay: 1000,
                 iteration: 1,
@@ -101,7 +92,7 @@ var Hangman = {
                 opacity: ["1", "1", "1", "1", "0"],
                 visibility: ["visible", "visible", "visible", "visible", "visible"],
             };
-            var imgChange19 = document.getElementById("img19").animate(img19, {
+            var imgChange19 = document.getElementById("text18").animate(img19, {
                 duration: 5000,
                 delay: 1000,
                 iteration: 1,
@@ -146,35 +137,6 @@ var Hangman = {
             calis.addEventListener("touchstart", playImg20, false);
             calis.removeEventListener("touchstart", playImg20, false);
             calis.removeEventListener("mousedown", playImg20, false);
-        }
-        else if (this.phrase == "Hedwig") {
-            var img7 = {
-                width: ["100px", "100px", "100px", "100px", "100px"],
-                top: ["-100px", "100px", "400px", "300px", "200px","100px"],
-                lef: ["", "595px", "565px", "520px", "570px"],
-                opacity: ["1", "1", "1", "1", "0"],
-                visibility: ["visible", "visible", "visible", "visible", "visible"],
-            };
-            var imgChange7 = document.getElementById("img7").animate(img7, {
-                duration: 5000,
-                delay: 1000,
-                iteration:1,
-                easing: 'ease-in-out',
-                fill: 'both'
-            });
-
-            function playImg7() {
-                imgChange7.playbackRate = 1;
-                imgChange7.play();
-            }
-            var calis = document.getElementById("clue");
-
-            calis.addEventListener("mousedown", playImg7, false);
-            calis.addEventListener("touchstart", playImg7, false);
-            calis.removeEventListener("touchstart", playImg7, false);
-            calis.removeEventListener("mousedown", playImg7, false);
-
-            //setTimeout(function () { document.getElementById("img7").src = ""; }, 5000);
         }
         else if (this.phrase == "Quidditch") {
             var img13 = {
@@ -234,7 +196,6 @@ var Hangman = {
             calis.removeEventListener("mousedown", playImg6, false);
             //setTimeout(function () { document.getElementById("img13").src = ""; }, 5000);
         }
-
         else if (this.phrase == "Dementor") {
             var img16 = {
                 width: ["120px", "120px", "120px", "120px", "120px"],
@@ -294,11 +255,11 @@ var Hangman = {
         }
         else if (this.phrase == "Leaky Cauldron") {
             var img2 = {
-                width: ["150px", "150px", "150px", "150px", "150px"],
+                width: ["180px", "180px", "180px", "180px", "180px"],
                 visibility: ["visible", "visible", "visible", "hidden", "hidden"],
                 opacity: ["1", "1", "1", "1", "0"],
             };
-            var imgChange2 = document.getElementById('img2').animate(img2, {
+            var imgChange2 = document.getElementById('tetx22').animate(img2, {
                 duration: 5000,
                 delay: 1000,
                 easing: 'ease-in-out',
@@ -322,7 +283,7 @@ var Hangman = {
                 visibility: ["visible", "visible", "visible", "hidden", "hidden"],
                 opacity: ["1", "1", "1", "1", "0"],
             };
-            var imgChange3 = document.getElementById('img3').animate(img3, {
+            var imgChange3 = document.getElementById('text21').animate(img3, {
                 duration: 5000,
                 delay: 1000,
                 easing: 'ease-in-out',
@@ -342,7 +303,7 @@ var Hangman = {
         }
         else if (this.phrase == "Fluffy") {
             var text3 = {
-                width: ["150px", "150px", "150px", "150px", "150px"],
+                width: ["100px", "100px", "100px", "100px", "100px"],
                 visibility: ["visible", "visible", "visible", "hidden", "hidden"],
                 opacity: ["1", "1", "1", "1", "0"],
             };
@@ -366,7 +327,7 @@ var Hangman = {
         }
         else if (this.phrase == "Felix Felicis") {
             var text7 = {
-                width: ["180px", "180px", "180px", "180px", "180px"],
+                width: ["100px", "100px", "100px", "100px", "100px"],
                 visibility: ["visible", "visible", "visible", "hidden", "hidden"],
                 opacity: ["1", "1", "1", "1", "0"],
             };
@@ -393,7 +354,7 @@ var Hangman = {
                 visibility: ["visible", "visible", "visible", "hidden", "hidden"],
                 opacity: ["1", "1", "1", "1", "0"],
             };
-            var imgChange14 = document.getElementById("img14").animate(img14, {
+            var imgChange14 = document.getElementById("text13").animate(img14, {
                 duration: 5000,
                 delay: 1000,
                 easing: 'ease-in-out',
@@ -417,7 +378,7 @@ var Hangman = {
                 visibility: ["visible", "visible", "visible", "hidden", "hidden"],
                 opacity: ["1", "1", "1", "1", "0"],
             };
-            var imgChange10 = document.getElementById("img10").animate(img10, {
+            var imgChange10 = document.getElementById("text16").animate(img10, {
                 duration: 5000,
                 delay: 1000,
                 easing: 'ease-in-out',
@@ -437,8 +398,8 @@ var Hangman = {
         }
         else if (this.phrase == "Weasleys Clock") {
             var text6 = {
-                width: ["150px", "150px", "150px", "150px", "150px"],
-                visibility: ["visible", "visible", "visible", "visible", "hidden"],
+                width: ["100px", "100px", "100px", "100px", "100px"],
+                visibility: ["visible", "visible", "visible", "hidden", "hidden"],
                 opacity: ["1", "1", "1", "1", "0"],
             };
             var textChange6 = document.getElementById("text6").animate(text6, {
@@ -465,7 +426,7 @@ var Hangman = {
                 visibility: ["visible", "visible", "visible", "hidden", "hidden"],
                 opacity: ["1", "1", "1", "1", "0"],
             };
-            var imgChange12 = document.getElementById("img12").animate(img12, {
+            var imgChange12 = document.getElementById("text15").animate(img12, {
                 duration: 5000,
                 delay: 1000,
                 easing: 'ease-in-out',
@@ -482,30 +443,6 @@ var Hangman = {
             calis.addEventListener("touchstart", playImg12, false);
             calis.removeEventListener("touchstart", playImg12, false);
             calis.removeEventListener("mousedown", playImg12, false);
-        }
-        else if (this.phrase == "Hogwarts Express") {
-            var img18 = {
-                width: ["100px", "100px", "100px", "100px", "100px"],
-                visibility: ["visible", "visible", "visible", "hidden", "hidden"],
-                opacity: ["1", "1", "1", "1", "0"],
-            };
-            var imgChange18 = document.getElementById("img18").animate(img18, {
-                duration: 5000,
-                delay: 1000,
-                easing: 'ease-in-out',
-                fill: 'both'
-            });
-
-            function playImg18() {
-                imgChange18.playbackRate = 1;
-                imgChange18.play();
-            }
-            var calis = document.getElementById('clue');
-
-            calis.addEventListener("mousedown", playImg18, false);
-            calis.addEventListener("touchstart", playImg18, false);
-            calis.removeEventListener("touchstart", playImg18, false);
-            calis.removeEventListener("mousedown", playImg18, false);
         }
         else if (this.phrase == "Remus Lupin") {
             var img11 = {
@@ -535,7 +472,7 @@ var Hangman = {
         }
         else if (this.phrase == "Dobby") {
             var text9 = {
-                width: ["180px", "180px", "180px", "180px", "170px"],
+                width: ["200px", "200px", "200px", "180px", "170px"],
                 opacity: ["1", "1", "1", "1", "0"],
                 visibility: ["visible", "visible", "visible", "hidden", "hidden"],
             };
@@ -611,7 +548,7 @@ var Hangman = {
                 visibility: ["visible", "visible", "visible", "hidden", "hidden"],
                 opacity: ["1", "1", "1", "1", "0"],
             };
-            var imgChange9 = document.getElementById('img9').animate(img9, {
+            var imgChange9 = document.getElementById('text17').animate(img9, {
                 duration: 5000,
                 delay: 1000,
                 easing: 'ease-in-out',
@@ -635,7 +572,7 @@ var Hangman = {
                 opacity: ["1", "1", "1", "1", "0"],
                 visibility: ["visible", "visible", "visible", "hidden", "hidden"],
             };
-            var imgChange4 = document.getElementById('img4').animate(img4, {
+            var imgChange4 = document.getElementById('text20').animate(img4, {
                 duration: 5000,
                 delay: 1000,
                 easing: 'ease-in-out',
@@ -655,7 +592,7 @@ var Hangman = {
         }
         else if (this.phrase == "Mirror of Erised") {
             var text = {
-                width: ["150px", "150px", "150px", "150px", "150px"],
+                width: ["100px", "100px", "100px", "100px", "100px"],
                 opacity: ["1", "1", "1", "1", "0"],
                 visibility: ["visible", "visible", "visible", "hidden", "hidden"],
             };
@@ -707,7 +644,7 @@ var Hangman = {
                 visibility: ["visible", "visible", "visible", "hidden", "hidden"],
                 opacity: ["1", "1", "1", "1", "0"],
             };
-            var imgChange = document.getElementById('img5').animate(img5, {
+            var imgChange = document.getElementById('text14').animate(img5, {
                 duration: 5000,
                 delay: 1000,
                 easing: 'ease-in-out',
@@ -779,7 +716,7 @@ var Hangman = {
                 visibility: ["visible", "visible", "visible", "hidden", "hidden"],
                 opacity: ["1", "1", "1", "1", "0"],
             };
-            var imgChange15 = document.getElementById('img15').animate(img15, {
+            var imgChange15 = document.getElementById('text12').animate(img15, {
                 duration: 5000,
                 delay: 1000,
                 easing: 'ease-in-out',
@@ -901,19 +838,19 @@ var Hangman = {
         this.numWrongGuesses++;//log the guess as wrong
         switch (this.numWrongGuesses) {
             case 1://1st failed turn
-                imghangma.src = "../Proje/hangman_2.gif";
+                imghangma.src = "\\hangman_2.gif";
                 break;
             case 2://2nd failed turn
-                imghangma.src = "../Proje/hangman_3.gif";
+                imghangma.src = "\\hangman_3.gif";
                 break;
             case 3://3rd failed turn
-                imghangma.src = "../Proje/hangman_4.gif";
+                imghangma.src = "\\hangman_4.gif";
                 break;
             case 4://4th failed turn
-                imghangma.src = "../Proje/hangman_5.gif";
+                imghangma.src = "\\hangman_5.gif";
                 break;
             case 5://5th failed turn - Game Over screen
-                imghangma.src = "../Proje/hangman_6.gif";
+                imghangma.src = "\\hangman_6.gif";
                 this.userScore = 0;
                 document.getElementById("score").innerHTML = "Score : " + this.userScore;//update score
                 document.getElementById("button").innerHTML = "Play again?";
@@ -935,7 +872,7 @@ var Hangman = {
         }
     },
     removeGamePieces: function () {//animated removal of body parts
-        imghangma.src = "../Proje/hangman_0.jpg";
+        imghangma.src = "\\hangman_0.jpg";
     },
     resetGame: function () {//reset everything
         this.cancelAnimateLetters();
