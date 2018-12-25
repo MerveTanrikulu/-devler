@@ -24,6 +24,6 @@ Homeworks
 
 [HW4](https://mervetanrikulu.github.io/Odevler/index.html)
 
-[Proje](https://mervetanrikulu.github.io/Odevler/Proje/ProjeHTML.html)
+[Proje](https://mervetanrikulu.github.io/Odevler/Proje/HTMLPage1.html)
 
 
