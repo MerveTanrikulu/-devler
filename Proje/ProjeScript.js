@@ -17,10 +17,7 @@ function dataSplit(text) {
 readData();
 
 var Hangman = {
-    harryPotterPhrases: ["Quidditch", "Fluffy", "Hedwig", "Mirror of Erised", "Leaky Cauldron", "Invisibility Cloak", "Godric Gryffindor","Albus Dumbledore","Severus Snape","Ollivander",
-        "Chessboard Chamber", "Azkaban", "Felix Felicis", "Helga Hufflepuff", "Salazar Slytherin", "Sirius Black", "Remus Lupin","Marauders Map", "Patronus", "Dementor","Dobby", "Catchers",
-        "Nicolas Flamel", "Weasleys Clock", "Wand", "Neville Longbottom", "Umbrige", "Buckbeak", "Hogwarts Express","Rowena Ravenclaw","Patronus"],
-
+    harryPotterPhrases:[],
     phrase: [],
     displayPhrase: [],
     control:[],
@@ -194,36 +191,6 @@ var Hangman = {
             calis.addEventListener("touchstart", playImg6, false);
             calis.removeEventListener("touchstart", playImg6, false);
             calis.removeEventListener("mousedown", playImg6, false);
-            //setTimeout(function () { document.getElementById("img13").src = ""; }, 5000);
-        }
-        else if (this.phrase == "Dementor") {
-            var img16 = {
-                width: ["120px", "120px", "120px", "120px", "120px"],
-                top: ["600px", "500px", "400px", "300px", "200px", "100px"],
-                lef: ["", "595px", "565px", "520px", "570px"],
-                transform: ["translateX(0vw)", "translateX(50vw)", "translateX(70vw)"],
-                visibility: ["visible", "visible", "visible", "visible", "visible"],
-                opacity: ["1", "1", "1", "1", "1", "0"],
-
-            };
-            var imgChange16 = document.getElementById("img16").animate(img16, {
-                duration: 9000,
-                delay: 1000,
-                iteration: 1,
-                easing: 'ease-in-out',
-                fill: 'both'
-            });
-
-            function playImg16() {
-                imgChange16.playbackRate = 1;
-                imgChange16.play();
-            }
-            var calis = document.getElementById("clue");
-
-            calis.addEventListener("mousedown", playImg16, false);
-            calis.addEventListener("touchstart", playImg16, false);
-            calis.removeEventListener("touchstart", playImg16, false);
-            calis.removeEventListener("mousedown", playImg16, false);
             //setTimeout(function () { document.getElementById("img13").src = ""; }, 5000);
         }
         else if (this.phrase == "Catchers") {
