@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>DFA Minimization | Automata-2019</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="NFA Minimization" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="BLM 320" />
+<meta property="og:description" content="BLM 320" />
+<meta property="og:site_name" content="Automata-2019" />
+
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="DFA.css">
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://maeyler.github.io/Automata-2018/">Automata-2019</a></h1>
+      
+
+      <h1 id="dfa-minimization">DFA Minimization</h1>
+<p>First of all, I explain what the finite automata (FA) is. Then I will be defined what is DFA after that I exp how to minimizate DFA.</p>
+
+<h2 id="finite-automata--fa-">Finite Automata ( FA )</h2>
+<p>A finite automaton (FA) is a simple idealized machine used to recognize patterns within input taken from some character set or alphabet. The job of an FA is to  <em>accept</em>  or  <em>reject</em>  an input depending on whether the pattern defined by the FA occurs in the input.
+So we can say Finite Automata(FA) is the simplest machine to recognize patterns.</p>
+
+<p>A Finite Automata consists of the following :
+Formal specification of machine is : { Q, ∑, q, F, δ }.
+Q : Finite set of states.
+∑ : set of Input Symbols.
+q : Initial state.
+F : set of Final States.
+δ : Transition Function.</p>
+
+<p>We can represent a FA graphically, with nodes for states, and arcs for transitions.
+We execute our FA on an input sequence as follows:</p>
+<ul>
+  <li>Begin in the start state</li>
+  <li>If the next input char matches the label on a transition from the current state to a new state, go to that new state</li>
+  <li>Continue making transitions on each input
+    <ul>
+      <li>If no move is possible, then stop</li>
+      <li>If in accepting state, then accept</li>
+    </ul>
+  </li>
+</ul>
+
+<p>FA is characterized into two types:</p>
+
+<h2 id="deterministic-finite-automata--dfa-">Deterministic Finite Automata ( DFA )</h2>
+<p>Deterministic finite automata - a state machine for which each transition for a state is uniquely determined by it’s input symbol as each state can only have a single move per input symbol.
+In a DFA, for a particular input character, machine goes to one state only. A transition function is defined on every state for every input symbol. Also in DFA null (or ε) move is not allowed, DFA can not change state without any input character.</p>
+
+<h1 id="dfa-minimization2">Minimization of DFA</h1>
+<p>DFA minimization stands for converting a given DFA to its equivalent DFA with minimum number of states.</p>
+<ul>
+	<li> Draw a table for all pairs of states (Qi, Qj) not necessarily connected directly [All are unmarked initially]</li>
+	<li> Consider every state pair (Qi, Qj) in the DFA where Qi ∈ F and Qj ∉ F or vice versa and mark them. [Here F is the set of final states]</li>
+	<li> Repeat this step until we cannot mark anymore states − If there is an unmarked pair (Qi, Qj), mark it if the pair {δ (Qi, A), δ (Qi, A)} is marked for some input alphabet.</li>
+	<li> Combine all the unmarked pair (Qi, Qj) and make them a single state in the reduced DFA.</li>
+</ul>
+
+<h2 id="example-">Example</h2>
+<p><img src="example.jpg" alt="" title="DFA" /></p>
+<p> We draw a table for all pair of states.</p>
+<table class="table table-bordered">
+<tr style="font-weight:bold;text-align:center;">
+<td></td>
+<td>a</td>
+<td>b</td>
+<td>c</td>
+<td>d</td>
+<td>e</td>
+<td>f</td>
+</tr>
+<tr>
+<td style="font-weight:bold;text-align:center;">a</td>
+<td style="background-color:rgb(81, 173, 85);"><span>&#10003;</span></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+</tr>
+<tr>
+<td style="font-weight:bold;text-align:center;">b</td>
+<td></td>
+<td style="background-color:rgb(81, 173, 85);"><span>&#10003;</span></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+</tr>
+<tr>
+<td style="font-weight:bold;text-align:center;">c</td>
+<td></td>
+<td></td>
+<td style="background-color:rgb(81, 173, 85);"><span>&#10003;</span></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+</tr>
+<tr>
+<td style="font-weight:bold;text-align:center;">d</td>
+<td></td>
+<td></td>
+<td></td>
+<td style="background-color:rgb(81, 173, 85);"><span>&#10003;</span></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+</tr>
+<tr>
+<td style="font-weight:bold;text-align:center;">e</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="background-color:rgb(81, 173, 85);"><span>&#10003;</span></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+</tr>
+<tr>
+<td style="font-weight:bold;text-align:center;">f</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="background-color:rgb(81, 173, 85);"><span>&#10003;</span></td>
+</tr>
+</table>
+<p> We mark the state pairs.</p>
+<table class="table table-bordered">
+<tr style="font-weight:bold;text-align:center;">
+<td></td>
+<td>a</td>
+<td>b</td>
+<td>c</td>
+<td>d</td>
+<td>e</td>
+<td>f</td>
+</tr>
+<tr>
+<td style="font-weight:bold;text-align:center;">a</td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+</tr>
+<tr>
+<td style="font-weight:bold;text-align:center;">b</td>
+<td></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+</tr>
+<tr>
+<td style="font-weight:bold;text-align:center;">c</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+</tr>
+<tr>
+<td style="font-weight:bold;text-align:center;">d</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+</tr>
+<tr>
+<td style="font-weight:bold;text-align:center;">e</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td></td>
+<td></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+</tr>
+<tr>
+<td style="font-weight:bold;text-align:center;">f</td>
+<td></td>
+<td></td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td style="background-color:rgb(81, 173, 85);"><span>&#10003;</span></td>
+</tr>
+</table>
+<p> We will try to mark the state pairs, with green colored check mark, transitively. If we input 1 to state ‘a’ and ‘f’, it will go to state ‘c’ and ‘f’ respectively. (c, f) is already marked, hence we will mark pair (a, f). Now, we input 1 to state ‘b’ and ‘f’; it will go to state ‘d’ and ‘f’ respectively. (d, f) is already marked, hence we will mark pair (b, f).</p>
+<table class="table table-bordered">
+<tr style="font-weight:bold;text-align:center;">
+<td></td>
+<td>a</td>
+<td>b</td>
+<td>c</td>
+<td>d</td>
+<td>e</td>
+<td>f</td>
+</tr>
+<tr>
+<td style="font-weight:bold;text-align:center;">a</td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+</tr>
+<tr>
+<td style="font-weight:bold;text-align:center;">b</td>
+<td></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+</tr>
+<tr>
+<td style="font-weight:bold;text-align:center;">c</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+</tr>
+<tr>
+<td style="font-weight:bold;text-align:center;">d</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+</tr>
+<tr>
+<td style="font-weight:bold;text-align:center;">e</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td></td>
+<td></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+<td style="background-color:rgb(81, 173, 85);"></td>
+</tr>
+<tr>
+<td style="font-weight:bold;text-align:center;">f</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td style="background-color:rgb(81, 173, 85);"><span>&#10003;</span></td>
+</tr>
+</table>
+<p>After that, we have got state combinations {a, b} {c, d} {c, e} {d, e} that are unmarked.
+
+We can recombine {c, d} {c, e} {d, e} into {c, d, e}
+
+Hence we got two combined states as − {a, b} and {c, d, e}
+
+So the final minimized DFA will contain three states {f}, {a, b} and {c, d, e}</p>
+<table>
+<p><img src="DFA2.jpg" alt="" title="DFA2" /></p>
+<h1 id="dfa-minimization3">DFA Minimization using Equivalence Theorem</h1>
+<p>If X and Y are two states in a DFA, we can combine these two states into {X, Y} 
+if they are not distinguishable. Two states are distinguishable, if there is at least one string S, 
+such that one of δ (X, S) and δ (Y, S) is accepting and another is not accepting. Hence, a DFA is minimal if and only if all the states are distinguishable.</p>
+<ul>
+  <li>All the states Q are divided in two partitions − final states and non-final states and are denoted by P0. All the states in a partition are 0th equivalent. 
+  Take a counter k and initialize it with 0.</li>
+  <li>Increment k by 1. For each partition in Pk, divide the states in Pk into two partitions if they are k-distinguishable.
+  Two states within this partition X and Y are k-distinguishable if there is an input S such that δ(X, S) and δ(Y, S) are (k-1)-distinguishable.</li>
+  <li>If Pk ≠ Pk-1, repeat previous step, otherwise go to next.</li>
+  <li>Combine kth equivalent sets and make them the new states of the reduced DFA.</li>
+</ul>
+<h2 id="example-">Example</h2>
+<p><img src="example.jpg" alt="" title="DFA" /></p>
+
+  <thead>
+    <tr>
+      <th>q</th>
+	  <th style="text-align: center">δ(q,0)</th>
+	  <th style="text-align: center">δ(q,1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">* a</td>
+      <td>b</td>
+      <td> c</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> b</td>
+      <td>a</td>
+      <td>d</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">-&gt; c</td>
+      <td>e</td>
+      <td>f</td>
+    </tr>
+	<tr>
+      <td style="text-align: center">-&gt; d</td>
+      <td>e</td>
+      <td>f</td>
+    </tr>
+	<tr>
+      <td style="text-align: center">-&gt; e</td>
+      <td>e</td>
+      <td>f</td>
+    </tr>
+	<tr>
+      <td style="text-align: center"> f</td>
+      <td>f</td>
+      <td>f</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Let us apply the above algorithm to the above DFA −
+
+P0 = {(c,d,e), (a,b,f)}
+P1 = {(c,d,e), (a,b),(f)}
+P2 = {(c,d,e), (a,b),(f)}
+Hence, P1 = P2.
+
+There are three states in the reduced DFA. The reduced DFA is as follows −</p>
+<p><img src="DFA2.jpg" alt="" title="DFA2" /></p>
+<table>
+<thead>
+    <tr>
+      <th>Q</th>
+	  <th style="text-align: center">δ(q,0)</th>
+	  <th style="text-align: center">δ(q,1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">*(a,b)</td>
+      <td>(a,b)</td>
+      <td>(c,d,e)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">-&gt;(c,d,e)</td>
+      <td>(c,d,e)</td>
+      <td>(f)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">f</td>
+      <td>f</td>
+      <td>f</td>
+    </tr>
+  </tbody>
+ </table>
+
+
+<h2 id="resources">Resources</h2>
+<p>
+<a href="https://www.tutorialspoint.com/automata_theory/dfa_minimization.htm">https://www.tutorialspoint.com/automata_theory/dfa_minimization.htm</a>
+<a href="https://www.tutorialspoint.com/automata_theory/deterministic_finite_automaton.htm">https://www.tutorialspoint.com/automata_theory/deterministic_finite_automaton.htm</a>
+
+<h1 id="made-by-merve-tanrikulu">Made by Merve TANRIKULU</h1>
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+    
+  </body>
+</html>
