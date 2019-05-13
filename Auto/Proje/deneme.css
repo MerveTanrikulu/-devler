@@ -211,7 +211,7 @@ body {
     width: 25px;
     height: 25px;
     bottom: 144px;
-    left: 798px;
+    left: 796px;
     border: 20px solid #b66767;
     border-left-color: transparent;
     border-radius: 50%;
@@ -562,15 +562,21 @@ body {
     visibility: hidden;
 }
 .icon22{
-	display: block;
+    display: block;
     position: absolute;
-    bottom: 265px;
-    left: 690px;
-    height: 30px;
-    width: 30px;
-    background: #b66767;
+    bottom: 263px;
+    border: solid black;
+    display: inline-block;
+    padding: 5px;
+    height: 10px;
+    width: 10px;
+    border: 8px solid #b66767;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
     overflow: hidden;
-	visibility :hidden;
+    visibility: hidden;
+    left: 682px;
+
 }
 .stick44{
 	position: absolute;
@@ -760,7 +766,7 @@ body {
     top: 50vh;
 }
 table {margin-left:50px; text-align:center; border-collapse:collapse;}
-td, th {padding:5px; }
+td, th {padding:5px 20px; }
 th {    color: #b6676791;
     background-color: #302d40;
     font-family: Arial, Helvetica, sans-serif;
@@ -965,15 +971,21 @@ tr:nth-child(odd) {background: #b66767}
 	visibility:hidden;
 }
 .icon11{
-	display: block;
+    display: block;
     position: absolute;
-    bottom: 265px;
-    left: 335px;
-    height: 30px;
-    width: 30px;
-    background: #b66767;
+    bottom: 263px;
+    border: solid black;
+    display: inline-block;
+    padding: 5px;
+    height: 10px;
+    width: 10px;
+    border: 8px solid #b66767;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
     overflow: hidden;
-	visibility :hidden;
+    visibility: hidden;
+    left: 329px;
+
 }
 .stick1{
     background: #b66767;
