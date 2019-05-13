@@ -104,7 +104,7 @@
 		</div>
 		
 	<div class="container2">
-	<input type="button" name="button" id="buton" value="Click Me " style ="margin-left: 39pt">
+	<input type="button" name="button" id="buton" value="Click Me " style="margin-left: 39pt;color: #b66767;background: rgba(0, 0, 0, .2);border: 0px;">
 	<script>
 		var stick1 = document.getElementById('stick1');
 		var stick2 = document.getElementById('stick2');
@@ -134,15 +134,16 @@
 		
 		var m0 = ["B","A","F","F", "E", "F"];
 		var m1 = ["D", "C", "E", "E", "E", "E"];
-		var m = ["A","B","*C","*D","E","*F"];
+		var m = ["->A","B","*C","*D","E","*F"];
 
-		document.write("<table border='1' width='200'>")
-		document.write("<tr><th></th><th>0</th><th>1</th></tr>");
+		document.write("<table border='1' width='200' visibility='visible' id= t2>")
+		document.write("<tr><th>Q</th><th>0</th><th>1</th></tr>");
 		
 		for(var i=0; i<6;i++){
 			//document.write("<tr><td>" + m[i] + "</td><td>" + m0[i] + "</td><td>" + m1[i] +"</td></tr>");
 			document.write("<tr><td>" + m[i] + "</td><td>" + "</td><td>"+"</td></tr>");
 		}
+		//style="text-align: center">-&gt;
 		
 		var btn=document.getElementById("buton");
 		let sayac=0;
@@ -745,6 +746,12 @@
 		document.getElementById("a144").style.visibility = "visible";
 		document.getElementById("a55").style.transform = "rotate(55deg)";
 		document.getElementById("a55").style.visibility = "visible";
+		document.getElementById("t1").style.visibility = "visible";
+		document.getElementById("t2").style.visibility = "hidden";
+		document.getElementById("pi").style.visibility = "hidden";
+		document.getElementById("pi2").style.visibility = "hidden";
+		document.getElementById("pi3").style.visibility = "hidden";
+		document.getElementById("buton").style.visibility = "hidden";
 		}
 		function stepEightheen(){
 		
@@ -768,6 +775,58 @@
 	visibility: hidden;
     position: absolute;
     top: 437px;">2 Equivalence [A,B] [E] [C,D,F] </p>
+	
+	<table id="t1" style=" border:1px; margin-top:133px; margin-left:50px; visibility:hidden; width:200px; height:150px;">
+<thead>
+    <tr>
+      <th>Q</th>
+	  <th style="text-align: center">δ(q,0)</th>
+	  <th style="text-align: center">δ(q,1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">-&gt;(a,b)</td>
+      <td>(a,b)</td>
+      <td>(c,d,e)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">*(c,d,e)</td>
+      <td>(c,d,e)</td>
+      <td>(f)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">f</td>
+      <td>f</td>
+      <td>f</td>
+    </tr>
+  </tbody>
+ </table>
+<thead>
+    <tr>
+      <th>Q</th>
+	  <th style="text-align: center">δ(q,0)</th>
+	  <th style="text-align: center">δ(q,1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">-&gt;(a,b)</td>
+      <td>(a,b)</td>
+      <td>(c,d,e)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">*(c,d,e)</td>
+      <td>(c,d,e)</td>
+      <td>(f)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">f</td>
+      <td>f</td>
+      <td>f</td>
+    </tr>
+  </tbody>
+ </table>
     <script>
         var dfaA = document.getElementById('dfaA');
 		var dfaB = document.getElementById('dfaB');
@@ -1078,15 +1137,6 @@
 		document.getElementById("icon44").style.visibility = "visible";
 		document.getElementById("icon44").style.transform = "rotate(50deg)";
 		
-      /*  var baloon = {
-            width: ["3px", "75px", "100px", "100px", "100px"],
-            height: ["3px", "200px", "300px", "400px", "400px"],
-            top: ["158pt", "70pt", "-35pt", "-120pt", "-800pt"],
-            transform: ["rotate(-95deg)", "rotate(-95deg)", "rotate(-140deg)", "rotate(-150deg)", "rotate(-200deg)"],
-            lef: ["", "595px", "565px", "520px", "570px"],
-            //opacity: ["1", "1","-1"]
-        };
-		*/
 
     </script>
 </body>
