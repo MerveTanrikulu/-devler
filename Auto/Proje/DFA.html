@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+
+
+<!-- End Jekyll SEO tag -->
+
     <link rel="stylesheet" href="DFA.css">
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
       
+
       <h1 id="dfa-minimization">DFA Minimization</h1>
 <p>First of all, I explain what the finite automata (FA) is. Then I will be defined what is DFA after that I exp how to minimizate DFA.</p>
 
@@ -52,7 +58,7 @@ In a DFA, for a particular input character, machine goes to one state only. A tr
 </ul>
 
 <h2 id="example-">Example</h2>
-<p><img src="example.jpg" alt="" title="DFA" /></p>
+<p><img src="DFA_to_be_minimized.jpg" alt="" title="DFA" /></p>
 <p> We draw a table for all pair of states.</p>
 <table class="table table-bordered">
 <tr style="font-weight:bold;text-align:center;">
@@ -259,7 +265,7 @@ Hence we got two combined states as − {a, b} and {c, d, e}
 
 So the final minimized DFA will contain three states {f}, {a, b} and {c, d, e}</p>
 <table>
-<p><img src="DFA2.jpg" alt="" title="DFA2" /></p>
+<p><img src="Minimized_DFA1.jpg" alt="" title="DFA2" /></p>
 <h1 id="dfa-minimization3">DFA Minimization using Equivalence Theorem</h1>
 <p>If X and Y are two states in a DFA, we can combine these two states into {X, Y} 
 if they are not distinguishable. Two states are distinguishable, if there is at least one string S, 
@@ -274,7 +280,7 @@ such that one of δ (X, S) and δ (Y, S) is accepting and another is not accepti
 </ul>
 <a href="deneme.html"> For the example with step by step</a>
 <h2 id="example-">Example</h2>
-<p><img src="example.jpg" alt="" title="DFA" /></p>
+<p><img src="DFA_to_be_minimized.jpg" alt="" title="DFA" /></p>
 
   <thead>
     <tr>
@@ -325,7 +331,7 @@ P2 = {(c,d,e), (a,b),(f)}
 Hence, P1 = P2.
 
 There are three states in the reduced DFA. The reduced DFA is as follows −</p>
-<p><img src="DFA2.jpg" alt="" title="DFA2" /></p>
+<p><img src="Minimized_DFA1.jpg" alt="" title="DFA2" /></p>
 <table>
 <thead>
     <tr>
@@ -363,7 +369,6 @@ There are three states in the reduced DFA. The reduced DFA is as follows −</p>
 
 
       
-    </div>
     
   </body>
 </html>
